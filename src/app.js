@@ -9,11 +9,11 @@ function selectPlan(planName, monthlyPrice){
     monthlyElement.innerHTML = "$" + monthlyPrice + "/mo";    
 
     const yearlyElement = document.getElementById('annualrate');
-    yearlyElement.innerHTML = "$" + (monthlyPrice * 12 ) + "/mo"; 
+    yearlyElement.innerHTML = "$" + (monthlyPrice * 12 ) + "/yr"; 
 
     let nextYear = new Date();
     nextYear.setFullYear(nextYear.getFullYear()+1);
-    
+
     const gooduntilElement = document.getElementById('gooduntil');
     gooduntilElement.innerHTML = nextYear.toDateString(); 
 }
